@@ -1,7 +1,7 @@
 const noteRoute = require("express").Router();
 const { createNote, deleteNote } = require("../lib/notes");
 
-let noteInfo = require("../db/db");
+let noteInfo = require("../db/db.json");
 
 // This Routes gets all the notes 
 noteRoute.get("/notes", (req, res) => {
@@ -20,7 +20,7 @@ noteRoute.post("/notes", (req, res) => {
 
 // DELETE route for erasing previous notes
 
-noteRoute.delete("/notes", async (req, res) => {
+noteRoute.delete("/notes/:id", async (req, res) => {
     const { id } = req.params
     notesInfo = await deleteNote(id, noteInfo);
     res.json(noteInfo);
