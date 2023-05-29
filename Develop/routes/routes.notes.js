@@ -1,10 +1,10 @@
 const noteRoute = require("express").Router();
-const { createNote, deleteNote } = require("../js/notes");
+const { createNote, deleteNote } = require("../lib/notes");
 
 let noteInfo = require("../db/db");
 
 // This Routes gets all the notes 
-noteRoute.get("", (req, res) => {
+noteRoute.get("/notes", (req, res) => {
     let data = noteInfo;
     res.json(data);
 
