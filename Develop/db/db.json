@@ -1,6 +1,7 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text"
+        "title": "Note Title Example",
+        "text": "Here is where you would include the main text of your note.",
+        "id": "1"
     }
 ]
