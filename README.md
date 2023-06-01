@@ -23,7 +23,7 @@ Just visit the live application here: https://note-taker-live.herokuapp.com/
 
 ### Preview of website:
 
-(public/assets/images/Note Taker.gif)
+![Demo of app](public/assets/images/Note Taker.gif)
 
 
 
