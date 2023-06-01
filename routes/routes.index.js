@@ -12,4 +12,4 @@ indexRoute.get("/notes", (req, res) => {
 });
 
 
-module.exports = htmlRoute;
+module.exports = indexRoute;
